@@ -1,3 +1,9 @@
+# Mastery
+
+### Introduction
+The goal of this project is to create a web application which will help students get to their goals by combining everything I learned in HTML/CSS/JS(React) and learning more along the way. I want to create an app where students can work towards their goals by tracking how much time they're putting in and seeing a constant positive feedback which is what we observe in video games. Hopefully, this will motivate students to persevere. Right now, I plan to do that by designing it like a video games where you can see your progress. For example, we can have the 10,000 hours rule or have a stat bar that keeps increasing as they complete study sessions.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
