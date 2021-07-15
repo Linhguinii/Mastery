@@ -1,7 +1,7 @@
 //import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 
 class App extends React.Component{
@@ -14,11 +14,10 @@ class App extends React.Component{
 	<Router>
 		<nav class="navbar navbar-expand bg-dark">
 		    	<div class="container-fluid">
-				<a class = "navbar-brand" href="index.html">Mastery</a>
+				<a class = "navbar-brand" href="index.html"><Link to="/About">Mastery</Link></a>
 				<div>
 					<ul class="mb-2">
 						<li class="nav-item">
-							{/* <a class="nav-link" href="index.html">App</a> */}
 								<Link to="/App">App</Link>
 						</li>
 					</ul>
@@ -26,9 +25,16 @@ class App extends React.Component{
 			</div>
 		</nav>					
 		<Switch>
+			<Route path="/About">
+				<About/>
+			</Route>
 			<Route path="/App">
 				<Timer/>	
 			</Route>
+			<Route path="/">
+				<Redirect to="/About"/>
+			</Route> 
+
 		</Switch>
 	</Router>
  
