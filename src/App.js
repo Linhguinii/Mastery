@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 class App extends React.Component{
   constructor(props){
-    super(props);
+    super(props);	
   }
 
   render(){
@@ -14,7 +14,7 @@ class App extends React.Component{
 	<Router>
 		<nav class="navbar navbar-expand bg-dark">
 		    	<div class="container-fluid">
-				<a class = "navbar-brand" href="index.html"><Link to="/About">Mastery</Link></a>
+				<a style={{textDecoration: 'none'}} class = "navbar-brand" href="index.html"><Link to="/About">Mastery</Link></a>
 				<div>
 					<ul class="mb-2">
 						<li class="nav-item">
@@ -160,18 +160,22 @@ class Timer extends React.Component{
 class About extends React.Component{
 	constructor(props){
 		super(props);
+		this.placeholder_css = {
+			display: 'flex',
+			alignItems: 'center',
+			justifyContent: 'center',
+			height: '100vh'
+			
+		};
 	}
 	render(){
 		return(
 			<div>
 				{/*  About */}
 				<div>
-					<div class="container" id="about">
+					<div class="container" style={this.placeholder_css}>
 					    Mastery is a solo-developed web application that has the intention to help students achieve their goals.
 					</div>
-				</div>
-				<div id="process">
-					<h1>Placeholder</h1>
 				</div>
 			</div>
 		)
