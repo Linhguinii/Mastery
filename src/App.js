@@ -14,7 +14,7 @@ class App extends React.Component{
 	<Router>
 		<nav class="navbar navbar-expand bg-dark">
 		    	<div class="container-fluid">
-				<a class = "navbar-brand" href="homepage.html">Mastery</a>
+				<a class = "navbar-brand" href="index.html">Mastery</a>
 				<div>
 					<ul class="mb-2">
 						<li class="nav-item">
@@ -24,7 +24,7 @@ class App extends React.Component{
 					</ul>
 				</div>
 			</div>
-		</nav>				
+		</nav>					
 		<Switch>
 			<Route path="/App">
 				<Timer/>	
@@ -151,5 +151,25 @@ class Timer extends React.Component{
 	}
 }
 
-
+class About extends React.Component{
+	constructor(props){
+		super(props);
+	}
+	render(){
+		return(
+			<div>
+				{/*  About */}
+				<div>
+					<div class="container" id="about">
+					    Mastery is a solo-developed web application that has the intention to help students achieve their goals.
+					</div>
+				</div>
+				<div id="process">
+					<h1>Placeholder</h1>
+				</div>
+			</div>
+		)
+	}
+}
+	
 export default App;
