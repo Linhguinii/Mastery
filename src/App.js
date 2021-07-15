@@ -23,7 +23,8 @@ class App extends React.Component{
 					</ul>
 				</div>
 			</div>
-		</nav>					
+		</nav>
+						
 		<Switch>
 			<Route path="/About">
 				<About/>
@@ -36,6 +37,26 @@ class App extends React.Component{
 			</Route> 
 
 		</Switch>
+		<footer class="bg-dark footer-section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-4">
+						<h5 class="text-light">Email</h5>
+						<p class="text-light">linh.hoangtt99@gmail.com</p>
+					</div>
+					<div class="col-4">
+						<h5 class="text-light">Phone</h5>
+						<p class="text-light">+1 514 441 8413</p>
+					</div>	
+					<div class="col-4">
+						<h5 class="text-light">Socials</h5>
+						<a href="https://github.com/Linhguinii" target="__blank">
+							<img src="~/pictures/GitHub-Mark-32px.png" alt="github-logo"></img>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>	
 	</Router>
  
 	)
@@ -164,7 +185,7 @@ class About extends React.Component{
 			display: 'flex',
 			alignItems: 'center',
 			justifyContent: 'center',
-			height: '100vh'
+			height: '86vh'
 			
 		};
 	}
