@@ -11,18 +11,26 @@ class App extends React.Component{
 
   render(){
   	return(
-	<nav class="navbar navbar-expand bg-dark">
-            <div class="container-fluid">
-       		<a class = "navbar-brand" href="homepage.html">Mastery</a>
-		<div>
-			<ul class="mb-2">
-				<li class="nav-item">
-					<a class="nav-link" href="index.html">App</a>
-				</li>
-			</ul>
-		</div>
-            </div>
-        </nav>
+	<Router>
+		<nav class="navbar navbar-expand bg-dark">
+		    	<div class="container-fluid">
+				<a class = "navbar-brand" href="homepage.html">Mastery</a>
+				<div>
+					<ul class="mb-2">
+						<li class="nav-item">
+							{/* <a class="nav-link" href="index.html">App</a> */}
+								<Link to="/App">App</Link>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>				
+		<Switch>
+			<Route path="/App">
+				<Timer/>	
+			</Route>
+		</Switch>
+	</Router>
  
 	)
   }
@@ -122,7 +130,6 @@ class Timer extends React.Component{
 	    return(
 	      <div>
 		<div id="timer">
-		  <h1>Mastery</h1>
 		  
 		  <div id="application">
 		    <div id="session-state">
@@ -138,52 +145,11 @@ class Timer extends React.Component{
 		    </button>
 		  </div>
 		</div>
-
-		<Router>
-		      <div>
-			<nav>
-			  <ul>
-			    <li>
-			      <Link to="/">Home</Link>
-			    </li>
-			    <li>
-			      <Link to="/about">About</Link>
-			    </li>
-			    <li>
-			      <Link to="/users">Users</Link>
-			    </li>
-			  </ul>
-			</nav>
-
-			{/* A <Switch> looks through its children <Route>s and
-			    renders the first one that matches the current URL. */}
-			<Switch>
-			  <Route path="/about">
-			    <About />
-			  </Route>
-			  <Route path="/users">
-			    <Users />
-			  </Route>
-			  <Route path="/">
-			    <Home />
-			  </Route>
-			</Switch>
-		   </div>
-	    </Router>
 	      </div>
 	    )
 
 	}
 }
-function Home() {
-  return <h2>Home</h2>;
-}
 
-function About() {
-  return <h2>About</h2>;
-}
 
-function Users() {
-  return <h2>Users</h2>;
-}
 export default App;
