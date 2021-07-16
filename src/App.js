@@ -37,7 +37,7 @@ class App extends React.Component{
 			</Route> 
 
 		</Switch>
-		<footer class="bg-dark footer-section">
+		<footer class="bg-dark footer-section pt-2">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-4">
@@ -188,7 +188,7 @@ class About extends React.Component{
 			display: 'flex',
 			alignItems: 'center',
 			justifyContent: 'center',
-			height: '86vh'
+			height: '83vh'
 			
 		};
 	}
