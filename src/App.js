@@ -14,11 +14,11 @@ class App extends React.Component{
 	<Router>
 		<nav class="navbar navbar-expand bg-dark">
 		    	<div class="container-fluid">
-				<a class = "navbar-brand" href="index.html"><Link style={{textDecoration: 'none'}} to="/About">Mastery</Link></a>
+				<a class = "navbar-brand" href="index.html"><Link style={{textDecoration: 'none', color: 'white'}} to="/About">Mastery</Link></a>
 				<div>
 					<ul class="mb-2">
 						<li class="nav-item">
-								<Link to="/App">App</Link>
+								<Link style={{textDecoration: 'none', color: 'white'}} to="/App">App</Link>
 						</li>
 					</ul>
 				</div>
