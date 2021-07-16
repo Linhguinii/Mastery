@@ -51,7 +51,7 @@ class App extends React.Component{
 					<div class="col-4">
 						<h5 class="text-light">Socials</h5>
 						<a href="https://github.com/Linhguinii" target="__blank">
-							<img src="~/pictures/GitHub-Mark-32px.png" alt="github-logo"></img>
+							<img src={require("./GitHub-Mark-32px.png")} alt="github-logo"></img>
 						</a>
 					</div>
 				</div>
