@@ -6,15 +6,17 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 class App extends React.Component{
   constructor(props){
-    super(props);	
+    super(props);
+		
   }
-
-  render(){
+	  render(){
   	return(
 	<Router>
 		<nav class="navbar navbar-expand bg-dark">
 		    	<div class="container-fluid">
-				<a class = "navbar-brand" href="index.html"><Link style={{textDecoration: 'none', color: 'white'}} to="/About">Mastery</Link></a>
+				<a class = "navbar-brand" href="index.html">
+					<Link style={{textDecoration: 'none', color: 'white'}} to="/About">Mastery</Link>
+				</a>
 				<div>
 					<ul class="mb-2">
 						<li class="nav-item">
@@ -57,6 +59,9 @@ class App extends React.Component{
             						<img style={{height: '32px', width: '32px'}}src={require("./linkedin.png")} alt="linkedin-logo" class="linkedin-logo"></img>
           					</a>
 					</div>
+					<div>
+						<p style={{fontSize: '10px', color: 'grey'}}>Icons were taken from <a href="https://icons8.com" target="__blank">icons8</a></p>
+					</div>
 				</div>
 			</div>
 		</footer>	
@@ -73,6 +78,7 @@ class Timer extends React.Component{
 		      session_length : 25,
 		      play: 'Start',
 		      session_state: 'Session',
+			
 		}
     		this.session = this.state.session_length + ":00";
  	}
@@ -170,7 +176,7 @@ class Timer extends React.Component{
 		      {this.session}
 		    </div>
 		    <img src="https://findicons.com/files/icons/2118/nuvola/48/kdevelop_down.png" alt="down-arrow" onClick={()=>this.handleClickDecrement()}></img>
-		    <button id="play" onClick={()=>this.handleClickTimer()}>
+		    <button class="btn btn-success" onClick={()=>this.handleClickTimer()}>
 		      {this.state.play}
 		    </button>
 		  </div>
