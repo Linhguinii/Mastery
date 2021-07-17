@@ -78,11 +78,17 @@ class Timer extends React.Component{
 		      session_length : 25,
 		      play: 'Start',
 		      session_state: 'Session',
-			
+			active: false,	
 		}
     		this.session = this.state.session_length + ":00";
  	}
+	toggleClass(){
+		this.setState({
+			active: !this.state.active
+		})
+	}
 	handleClickTimer(){
+		this.toggleClass();
 	    if(this.state.play === 'Cancel'){
 	      this.setState({
 		play: 'Start'
@@ -176,7 +182,7 @@ class Timer extends React.Component{
 		      {this.session}
 		    </div>
 		    <img src="https://findicons.com/files/icons/2118/nuvola/48/kdevelop_down.png" alt="down-arrow" onClick={()=>this.handleClickDecrement()}></img>
-		    <button class="btn btn-success" onClick={()=>this.handleClickTimer()}>
+		    <button class={this.state.active ? "btn btn-danger" : "btn btn-success"} onClick={()=>this.handleClickTimer()}>
 		      {this.state.play}
 		    </button>
 		  </div>
