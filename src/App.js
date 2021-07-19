@@ -17,13 +17,14 @@ class App extends React.Component{
 				<a class = "navbar-brand" href="index.html">
 					<Link style={{textDecoration: 'none', color: 'white'}} to="/About">Mastery</Link>
 				</a>
-				<div>
-					<ul class="mb-2">
+					<ul class="navbar-nav mr-auto mb-2">
 						<li class="nav-item">
-								<Link style={{textDecoration: 'none', color: 'white'}} to="/App">App</Link>
+							<Link style={{textDecoration: 'none', color: 'white'}} to="/App">App</Link>
 						</li>
+						<li class="nav-item">
+							<Link>Log In</Link>
+						</li>	
 					</ul>
-				</div>
 			</div>
 		</nav>
 						
