@@ -13,21 +13,20 @@ class App extends React.Component{
   	return(
 	<Router>
 		<nav class="navbar navbar-expand bg-dark">
-		    	<div class="container-fluid">
+			<div class="container-fluid">
 				<a class = "navbar-brand" href="index.html">
 					<Link style={{textDecoration: 'none', color: 'white'}} to="/About">Mastery</Link>
-				</a>
-					<ul class="navbar-nav mr-auto mb-2">
-						<li class="nav-item">
-							<Link style={{textDecoration: 'none', color: 'white'}} to="/App">App</Link>
-						</li>
-						<li class="nav-item">
-							<Link>Log In</Link>
-						</li>	
-					</ul>
+				</a>	
+				<ul class="navbar-nav mb-2">
+					<li class="nav-item">
+						<Link style={{textDecoration: 'none', color: 'white'}} to="/App">App</Link>
+					</li>
+					<li class="nav-item" style={{marginLeft: '5px'}}>
+						<Link style={{textDecoration: 'none', color: 'white'}}>Log In</Link>
+					</li>	
+				</ul>
 			</div>
 		</nav>
-						
 		<Switch>
 			<Route path="/About">
 				<About/>
