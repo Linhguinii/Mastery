@@ -22,7 +22,7 @@ class App extends React.Component{
 						<Link style={{textDecoration: 'none', color: 'white'}} to="/App">App</Link>
 					</li>
 					<li class="nav-item" style={{marginLeft: '5px'}}>
-						<Link style={{textDecoration: 'none', color: 'white'}}>Log In</Link>
+						<Link style={{textDecoration: 'none', color: 'white'}} to="/LogIn">Log In</Link>
 					</li>	
 				</ul>
 			</div>
@@ -33,6 +33,9 @@ class App extends React.Component{
 			</Route>
 			<Route path="/App">
 				<Timer/>	
+			</Route>
+			<Route path="/LogIn">
+				<LogIn/>
 			</Route>
 			<Route path="/">
 				<Redirect to="/About"/>
@@ -230,6 +233,19 @@ class About extends React.Component{
 						</div>		
 					</div>
 				</div>
+			</div>
+		)
+	}
+}
+
+class LogIn extends React.Component{
+	constructor(props){
+		super(props);
+	}
+	render(){
+		return(
+			<div>
+		
 			</div>
 		)
 	}
