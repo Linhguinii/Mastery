@@ -3,10 +3,11 @@ import React from 'react';
 class LogIn extends React.Component{
 	constructor(props){
 		super(props);
-                this.body_css = {
+                this.body = {
+                  color: "#fff",
                   background: "#3598dc"
                 }
-                this.signup_form_css = {
+                this.signup_form = {
                   width: "400px",
                   margin: "30px auto",
                   marginTop: "0px",
@@ -15,8 +16,8 @@ class LogIn extends React.Component{
 	}
 	render(){
 		return(
-			<div style={this.body_css}>
-                          <div class="signup-form" style={this.signup_form_css}>
+			<div style={this.body}>
+                          <div class="signup-form" style={this.signup_form}>
                             <form action="" method="post">
                               <h2>Create your account</h2>
                               <div class="form-group">
