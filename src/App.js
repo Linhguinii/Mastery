@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-ro
 import 'bootstrap/dist/css/bootstrap.css';
 import Timer from "./Timer";
 import About from "./About";
-import LogIn from "./LogIn";
+import Login from "./Login";
 
 class App extends React.Component{
   constructor(props){
@@ -25,7 +25,7 @@ class App extends React.Component{
 						<Link style={{textDecoration: 'none', color: 'white'}} to="/App">App</Link>
 					</li>
 					<li class="nav-item" style={{marginLeft: '5px'}}>
-						<Link style={{textDecoration: 'none', color: 'white'}} to="/LogIn">Log In</Link>
+						<Link style={{textDecoration: 'none', color: 'white'}} to="/Login">Login</Link>
 					</li>	
 				</ul>
 			</div>
@@ -37,8 +37,8 @@ class App extends React.Component{
 			<Route path="/App">
 				<Timer/>	
 			</Route>
-			<Route path="/LogIn">
-				<LogIn/>
+			<Route path="/Login">
+				<Login/>
 			</Route>
 			<Route path="/">
 				<Redirect to="/About"/>
