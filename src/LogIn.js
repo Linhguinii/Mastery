@@ -3,11 +3,17 @@ import './Login.css';
 
 class LogIn extends React.Component{
   constructor(props){
-          super(props);
+		super(props);
   }
+	componentWillMount(){
+		document.body.style.backgroundColor = "#3598dc" 
+	}
+	componentWillUnmount(){
+		document.body.style.backgroundColor = null
+	}
   render(){
     return(
-      <div>
+      <div class="root-login">
         <div class="signup-form">
           <form action="" method="post">
             <h2>Create your account</h2>
