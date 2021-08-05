@@ -11,6 +11,7 @@ class LogIn extends React.Component{
         <div class="signup-form">
           <form action="" method="post">
             <h2>Create your account</h2>
+            <p>Please fill in this form to create an account!</p>
             <div class="form-group">
               <div class="row">
                 <div class="col"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></input></div>

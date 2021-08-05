@@ -1,4 +1,5 @@
 import React from 'react';
+import './About.css';
 
 class About extends React.Component{
 	constructor(props){
@@ -12,7 +13,7 @@ class About extends React.Component{
 	}
 	render(){
 		return(
-                  <div style={this.placeholder_css}>
+                  <div class="root">
                       <div class="d-flex justify-content-center"> 
                               {/*  About */}
                               <div>
