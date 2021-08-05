@@ -3,14 +3,16 @@ import './Login.css';
 
 class LogIn extends React.Component{
   constructor(props){
-		super(props);
+    super(props);
   }
-	componentWillMount(){
-		document.body.style.backgroundColor = "#3598dc" 
-	}
-	componentWillUnmount(){
-		document.body.style.backgroundColor = null
-	}
+  componentWillMount(){
+    document.body.style.backgroundColor = "#3598dc"; 
+    document.body.style.color = "white"
+  }
+  componentWillUnmount(){
+    document.body.style.backgroundColor = null;
+    document.body.style.color = null
+  }
   render(){
     return(
       <div class="root-login">
